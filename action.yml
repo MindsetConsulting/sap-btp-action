@@ -19,6 +19,9 @@ inputs:
   cf_space:
     description: "Target Space"
     required: false
+  cf_origin:
+    description: "Indicates the identity provider to be used for authentication"
+    required: false
   command:
     description: "Command to run using CF CLI"
     required: true
