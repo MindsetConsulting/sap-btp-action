@@ -9,11 +9,12 @@ jobs:
   test:
     runs-on: ubuntu-18.04
     steps:
-    - uses: NickChecan/sap-btp-action@master
+    - uses: MindsetConsulting/sap-btp-action@master
       with:
         cf_api: ${{ secrets.CF_API }}
         cf_username: ${{ secrets.CF_USER }}
         cf_password: ${{ secrets.CF_PASSWORD }}
         cf_org: ${{ secrets.CF_ORG }}
         cf_space: ${{ secrets.CF_SPACE }}
+        cf_origin: ${{ secrets.CF_ORIGIN }}
         command: target
