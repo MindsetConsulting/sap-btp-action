@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-cf install-plugin multiapps
+cf install-plugin multiapps -f
 
 cf api "$INPUT_CF_API"
 
