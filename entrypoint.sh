@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+cf install-plugin multiapps
+
 cf api "$INPUT_CF_API"
 
 if [ -n "$INPUT_CF_ORIGIN" ]; then
