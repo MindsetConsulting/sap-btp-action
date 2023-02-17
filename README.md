@@ -20,12 +20,13 @@ jobs:
     needs: build
     
     steps:
-    - uses: NickChecan/sap-btp-action
+    - uses: MindsetConsulting/sap-btp-action
       with:
         cf_api: https://api.my-cloud-foundry.com
         cf_username: ${{ secrets.CF_USER }}
         cf_password: ${{ secrets.CF_PASSWORD }}
         cf_org: AwesomeApp
         cf_space: Development
+        cf_origin: a123456789-platform
         command: deploy ./project.mtar -f
 ```
